@@ -23,7 +23,6 @@ p {
     text-align: left;
 }
 
-
 /*.body-style css used to center webite on larger screen sizes*/
 .body {
     max-width: 2000px;
@@ -35,13 +34,12 @@ p {
 #navbar {
     background-color: #130a02;
     font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: medium;
+}
+
+.nav-link {
     color: #0ad6ff;
-    border-style: solid;
-    border-color: #0ad6ff;
-
-
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 }
 
 /* Header  */
@@ -74,6 +72,13 @@ p {
 
 /*Join the Crew*/
 
+.btn-primary {
+    color: #130a02;
+    background-color: #0ad6ff;
+    border-color: #0ad6ff;
+    font-family: "Lato", sans-serif;
+}
+
 /*Footer*/
 
 footer {
@@ -95,4 +100,26 @@ footer {
     text-decoration: none;
     color: #0ad6ff;
     letter-spacing: 20px;
+}
+
+/*Hover*/
+
+/*Hover Navigation*/
+
+a:hover {
+    color: #b00404;
+}
+
+/*Hover Icons*/
+
+.fa-instagram:hover {
+    color: #b00404;
+}
+
+.fa-twitter:hover {
+    color: #b00404;
+}
+
+.fa-facebook-square:hover {
+    color: #b00404;
 }
