@@ -73,3 +73,26 @@ p {
 }
 
 /*Join the Crew*/
+
+/*Footer*/
+
+footer {
+    min-height: 60px;
+    height: auto;
+    margin: 0;
+    background: #130a02;
+}
+
+.social-align {
+    text-align: center;
+}
+
+.social-links li a i {
+    padding-top: 20px;
+    font-size: 2rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #0ad6ff;
+    letter-spacing: 20px;
+}
