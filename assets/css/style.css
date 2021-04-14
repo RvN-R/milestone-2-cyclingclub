@@ -18,12 +18,14 @@
     padding-left: 0;
 }
 
-.font-family {
+p {
     font-family: "lato", sans-serif;
+    text-align: left;
 }
 
+
 /*.body-style css used to center webite on larger screen sizes*/
-.body-style {
+.body {
     max-width: 2000px;
     margin-left: auto;
     margin-right: auto;
@@ -51,10 +53,21 @@
     width: 50%;
 }
 
-.header-hero-background-image {
-    background-color: #130a02;
+#header-hero-background-image {
+    width: 100%;
+    height: min-content;
+    background: url(../images/HeaderHeroBackgroundImageBW.png)no-repeat center center;
 }
 
 .header-container {
     padding-top: 50px;
+}
+
+/* About Us*/
+
+.about-us-hero-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
