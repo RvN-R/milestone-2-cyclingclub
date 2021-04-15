@@ -35,7 +35,8 @@
         <!--Header-->
         <div class="header-container mb-4 rounded-3">
             <div class="container-fluid" id="header-hero-background-image">
-                <img src="assets/images/RamCyclingClubLogo.png" alt="Ram Cycling Club Logo" class="ramsCyclingClubLogo">
+                <img src="assets/images/RamCyclingClubLogo.png" alt="Ram Cycling Club Logo" class="ramsCyclingClubLogo"
+                    id="ramsCyclingClubLogo">
             </div>
         </div>
     </header>
@@ -83,17 +84,17 @@
             <div class="col-sm-12">
                 <h2>Club Rides</h2>
             </div>
-            <div class="col-sm-12 d-flex justify-content-center" id="map">
-                <div>Insert Map Here</div>
+            <div class="col-sm-12 d-flex justify-content-center">
+                <div id="map"></div>
             </div>
             <div class="col-sm-6 d-flex justify-content-center">
                 <div>
-                    <button>Saturday Ride</button>
+                    <button id="saturdayRideButton">Saturday Ride</button>
                 </div>
             </div>
             <div class="col-sm-6 d-flex justify-content-center">
                 <div>
-                    <button>Lunch Time Ride</button>
+                    <button id="lunchTimeRideButton">Lunch Time Ride</button>
                 </div>
             </div>
         </div>
@@ -186,7 +187,8 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq8zDO33A16FC65PZsZzbuL11Mca_l2z0&callback=initMap&libraries=&v=weekly"
         async></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js" ;></script>
     <!-- <script>
         var APIKey = "AIzaSyAq8zDO33A16FC65PZsZzbuL11Mca_l2z0";

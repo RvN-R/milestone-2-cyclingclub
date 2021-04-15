@@ -1,18 +1,30 @@
 // Initialize and add the map
 function initMap() {
-    // The location of Uluru
-    const uluru = {
-        lat: -25.344,
-        lng: 131.036
+    // The location of Center London
+    let london = {
+        lat: 51.5074,
+        lng: -0.1278
     };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        center: uluru,
+    // The map, centered at Center London
+    let map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: london,
     });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-        position: uluru,
+
+}
+
+function lunchRide() {
+    // The location of Lunch Time Ride - Battersea Band Stand
+    let batterseaBandStand = {
+        lat: 51.4793,
+        lng: -0.1581
+    };
+
+    //The marker, positioned Battersea Park Band Stand Lunch Time Ride
+    let batterseaMarker = new google.maps.Marker({
+        position: batterseaBandStand,
         map: map,
     });
+
+
 }
