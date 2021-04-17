@@ -6,54 +6,52 @@ function initMap() {
         lng: -0.1581354
     };
 
-    let directionsService = new google.maps.DirectionsService();
-    let directionsRenderer = new google.maps.DirectionsRenderer();
-    let confirmButtonPress = ("Button has been pressed");
+    let albertBridge = {
+        lat: 51.48266462110233,
+        lng: -0.1665253491778361
+    };
 
+    let hydePark = {
+        lat: 51.50624357808803,
+        lng: -0.17264036049967665
+    };
+
+    let marbleArch = {
+        lat: 51.513619091328465,
+        lng: -0.1590325573598735
+    }
 
 
     // The map, centered at London
     let map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 10,
+        zoom: 11,
         center: london,
-    });
-
-    directionsRenderer.setMap(map);
-    calculateAndDisplayRoute(directionsService, directionsRenderer);
-    document.getElementById("SaturdayRideButton").addEventListener("click", () => {
-        console.log(confirmButtonPress);
     });
 
     document.getElementById("lunchTimeRideButton").addEventListener("click", () => {
         let marker = new google.maps.Marker({
             position: london,
+            zoom: 12,
+            map: map,
+        });
+
+        let marker2 = new google.maps.Marker({
+            position: albertBridge,
+            zoom: 12,
+            map: map,
+        });
+
+        let marker3 = new google.maps.Marker({
+            position: hydePark,
+            zoom: 12,
+            map: map,
+        });
+
+        let marker4 = new google.maps.Marker({
+            position: marbleArch,
+            zoom: 12,
             map: map,
         });
     });
 
-}
-
-function calculateAndDisplayRoute(directionsService, directionsRenderer) {
-    directionsService.route({
-            origin: {
-                lat: 37.77,
-                lng: -122.447
-            },
-            destination: {
-                lat: 37.768,
-                lng: -122.511
-            },
-            // Note that Javascript allows us to access the constant
-            // using square brackets and a string value as its
-            // "property."
-            travelMode: google.maps.TravelMode.DRIVING,
-        },
-        (response, status) => {
-            if (status == "OK") {
-                directionsRenderer.setDirections(response);
-            } else {
-                window.alert("Directions request failed due to " + status);
-            }
-        }
-    );
 }
