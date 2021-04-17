@@ -1,56 +1,3 @@
-// // Initialize and add the map
-// function initMap() {
-//     // The location of Center London
-//     let london = {
-//         lat: 51.5074,
-//         lng: -0.1278
-//     };
-//     // The map, centered at Center London
-//     let map = new google.maps.Map(document.getElementById("map"), {
-//         zoom: 10,
-//         center: london,
-//     });
-
-// }
-
-
-// function lunchRide() {
-//     // The location of Lunch Time Ride - Battersea Band Stand
-//     let batterseaBandStand = {
-//         lat: 51.4793,
-//         lng: -0.1581
-//     };
-
-//     //The marker, positioned Battersea Park Band Stand Lunch Time Ride
-//     let batterseaMarker = new google.maps.Marker({
-//         position: batterseaBandStand,
-//         map: map,
-//     });
-
-
-// }
-
-// function initMap() {
-//     const directionsService = new google.maps.DirectionsService();
-//     const directionsRenderer = new google.maps.DirectionsRenderer();
-//     let message = "Button Been Pressed"
-//     const map = new google.maps.Map(document.getElementById("map"), {
-//         zoom: 6,
-//         center: {
-//             lat: 51.4793,
-//             lng: -0.1581
-//         },
-//     });
-//     directionsRenderer.setMap(map);
-//     let SRButton = document.getElementById("lunchTimeRideButton");
-//     SRButton.addEventListener("click", () => {
-//         calculateAndDisplayRoute(directionsService, directionsRenderer);
-//         console.log(message);
-
-//     });
-
-// }
-
 // Initialize and add the map
 function initMap() {
     // Setting Locations
@@ -59,10 +6,22 @@ function initMap() {
         lng: -0.1581354
     };
 
-    // The map, centered at Uluru
+    let directionsService = new google.maps.DirectionsService();
+    let directionsRenderer = new google.maps.DirectionsRenderer();
+    let confirmButtonPress = ("Button has been pressed");
+
+
+
+    // The map, centered at London
     let map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
         center: london,
+    });
+
+    directionsRenderer.setMap(map);
+    calculateAndDisplayRoute(directionsService, directionsRenderer);
+    document.getElementById("SaturdayRideButton").addEventListener("click", () => {
+        console.log(confirmButtonPress);
     });
 
     document.getElementById("lunchTimeRideButton").addEventListener("click", () => {
@@ -72,4 +31,29 @@ function initMap() {
         });
     });
 
+}
+
+function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+    directionsService.route({
+            origin: {
+                lat: 37.77,
+                lng: -122.447
+            },
+            destination: {
+                lat: 37.768,
+                lng: -122.511
+            },
+            // Note that Javascript allows us to access the constant
+            // using square brackets and a string value as its
+            // "property."
+            travelMode: google.maps.TravelMode.DRIVING,
+        },
+        (response, status) => {
+            if (status == "OK") {
+                directionsRenderer.setDirections(response);
+            } else {
+                window.alert("Directions request failed due to " + status);
+            }
+        }
+    );
 }
