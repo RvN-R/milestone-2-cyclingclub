@@ -13,12 +13,12 @@ function initMap() {
     // Only exicute directionRender when Lunch Time Button is Clicked
     directionsRenderer.setMap(map);
     document.getElementById("lunchTimeRideButton").addEventListener("click", () => {
-        calculateAndDisplayRoute(directionsService, directionsRenderer);
+        calculateAndDisplayLunchRoute(directionsService, directionsRenderer);
     });
 }
 
-//below function provides the google initMap funciton the Orgin, Destination and Waypoint information to then render on the map. Also specify which mode of transport you want to use when following the route
-function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+//Below function provides the google initMap funciton the Orgin, Destination and Waypoint information to then render on the map. Also specify which mode of transport you want to use when following the route
+function calculateAndDisplayLunchRoute(directionsService, directionsRenderer) {
     directionsService.route({
             origin: 'The London Peace Pagoda, Carriage Drive North, London, UK',
             destination: 'The London Peace Pagoda, Carriage Drive North, London, UK',

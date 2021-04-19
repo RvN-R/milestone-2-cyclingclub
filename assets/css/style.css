@@ -80,6 +80,21 @@ p {
     margin-right: auto;
 }
 
+.saturdayRideButtonContainer {
+    background-color: red;
+}
+
+.lunchTimeRideButtonContainer {
+    background-color: blue;
+}
+
+.saturdayRideInfo {
+    background-color: green;
+}
+
+.lunchTimeRideInfo {
+    background-color: yellow;
+}
 
 /*Join the Crew*/
 

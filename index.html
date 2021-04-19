@@ -81,25 +81,26 @@
     </section>
     <!--Club Rides-->
     <section class="container-fluid">
-        <div class="row no-gutter">
+        <div class="row no-gutters">
             <div class="col-sm-12">
                 <h2>Club Rides</h2>
             </div>
             <div class="col-sm-12 d-flex justify-content-center">
                 <div id="map"></div>
             </div>
-            <div class="col-sm-6 d-flex flex-column mb-3 justify-content-center">
-                <div class="p-2">
+            <div class="row no-gutters">
+                <div class="col-sm-6 mb-3 d-flex justify-content-center saturdayRideButtonContainer">
                     <button id="SaturdayRideButton">Saturday Ride</button>
-                    <div class="p-2" id="SaturdayRideInfo"></div>
                 </div>
-            </div>
-            <div class="col-sm-6 d-flex flex-column mb-3 justify-content-center">
-                <div class="p-2 lunchTimeRideButtonContainer">
+                <div class="col-sm-6 mb-3 d-flex justify-content-center lunchTimeRideButtonContainer">
                     <button id="lunchTimeRideButton">Lunch Time Ride</button>
                 </div>
-                <div class="p-2 lunchTimeRideInfo" id="lunchTimeRideInfo"></div>
             </div>
+            <div class="row no-gutters">
+                <div class="saturdayRideInfo col-sm-6 mb-3 d-flex justify-content-center" id="SaturdayRideInfo"></div>
+                <div class="lunchTimeRideInfo col-sm-6 mb-3 d-flex justify-content-center" id="lunchTimeRideInfo"></div>
+            </div>
+
         </div>
     </section>
     <!--Join the Crew-->
