@@ -31,15 +31,18 @@ p {
 }
 
 /*Navigation*/
-#navbar {
+nav {
     background-color: #130a02;
-    font-family: "Lato", sans-serif;
 }
 
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: #0ad6ff;
     font-family: "Lato", sans-serif;
     font-weight: 400;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #0ad6ff;
 }
 
 /* Header  */
@@ -52,9 +55,8 @@ p {
 }
 
 #header-hero-background-image {
-    width: 100%;
-    height: min-content;
     background: url(../images/HeaderHeroBackgroundImageBW.png)no-repeat center center;
+    background-size: 2000px
 }
 
 .header-container {
@@ -165,6 +167,9 @@ p {
     min-height: 60px;
     height: auto;
     margin: 0;
+}
+
+.footer-background {
     background-color: #130a02;
 }
 
@@ -186,7 +191,8 @@ p {
 
 /*Hover Navigation*/
 
-a:hover {
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
     color: #b00404;
 }
 
