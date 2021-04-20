@@ -14,6 +14,12 @@
     </script>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/c6162dd656.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_UcnDNIDNeUQsfEe0SaQtU");
+        })();
+    </script>
 </head>
 
 <body>
@@ -128,8 +134,7 @@
             </div>
             <div class="col-sm-12 d-flex justify-content-center">
                 <div>
-                    <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form"
-                        target="_blank">
+                    <form id="signup-form" target="_blank">
                         <div class="form-group mb-3">
                             <label for="firstName">First Name:</label>
                             <input type="text" class="form-control" id="firstName" name="first_name"
