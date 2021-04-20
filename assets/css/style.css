@@ -24,7 +24,7 @@ p {
 }
 
 /*.body-style css used to center webite on larger screen sizes*/
-.body {
+body {
     max-width: 2000px;
     margin-left: auto;
     margin-right: auto;
