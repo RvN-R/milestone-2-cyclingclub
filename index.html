@@ -44,10 +44,10 @@
     <!--About Us-->
     <section class="container-fluid">
         <div class="row no-gutters">
-            <div class="col-sm-12">
+            <div class=" ps-5 col-sm-12">
                 <h2>About Us</h2>
             </div>
-            <div class="col-sm-6">
+            <div class=" ps-5 col-sm-6">
                 <p>
                     Rams Cycling Club is a friendly and diverse South West London cycling club. The club takes its name
                     from the Rams Brewery, well known and industrial hub in Wandsworth, and the ancestral home of Youngs
@@ -69,7 +69,7 @@
                     an information pack.
                 </p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 pe-5">
                 <div class="row">
                     <div class="col">
                         <img class="about-us-hero-image" src="assets/images/AboutUsHeroImage.jpg"
@@ -85,22 +85,26 @@
             <div class="col-sm-12">
                 <h2>Club Rides</h2>
             </div>
-            <div class="col-sm-12 d-flex justify-content-center">
+            <div class="col-sm-12 d-flex justify-content-center clubRideButtonsOutter">
                 <div id="map"></div>
             </div>
             <div class="row no-gutters">
                 <div class="col-sm-6 mb-3 d-flex justify-content-center saturdayRideButtonContainer">
-                    <button id="SaturdayRideButton">Saturday Ride</button>
+                    <button class="SaturdayRideButtonPassive" id="SaturdayRideButton">
+                        <h4>Saturday Ride</h4>
+                    </button>
                 </div>
                 <div class="col-sm-6 mb-3 d-flex justify-content-center lunchTimeRideButtonContainer">
-                    <button id="lunchTimeRideButton">Lunch Time Ride</button>
+                    <button class="lunchTimeRideButtonPassive" id="lunchTimeRideButton">
+                        <h4>Lunch Time Ride</h4>
+                    </button>
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="saturdayRideInfo col-sm-6 mb-3 d-flex justify-content-center" id="SaturdayRideInfo"></div>
-                <div class="lunchTimeRideInfo col-sm-6 mb-3 d-flex justify-content-center" id="lunchTimeRideInfo"></div>
+            <div class="row no-gutters justify-content-center" id="RideInfoOutter">
+                <div class="RideInfo col-sm-6 mb-3 d-flex justify-content-center">
+                    <div class="text-center" id="RideInfo"></div>
+                </div>
             </div>
-
         </div>
     </section>
     <!--Join the Crew-->
