@@ -73,7 +73,18 @@ nav {
     width: 100%;
 }
 
+.about-use-heading {
+    background-color: #130a02;
+    color: #0ad6ff;
+}
+
 /*Club Rides*/
+
+.club-ride-heading {
+    background-color: #130a02;
+    color: #0ad6ff;
+}
+
 #map {
     height: 400px;
     /* The height is 400 pixels */
@@ -88,14 +99,6 @@ nav {
     padding-bottom: 25px;
 }
 
-/* .saturdayRideButtonContainer {
-    background-color: red;
-}
-
-
-.lunchTimeRideButtonContainer {
-    background-color: blue;
-} */
 
 .SaturdayRideButtonPassive {
     width: 50%;
@@ -153,6 +156,11 @@ nav {
 
 
 /*Join the Crew*/
+
+.join-the-crew-heading {
+    background-color: #130a02;
+    color: #0ad6ff;
+}
 
 .btn-primary {
     color: #130a02;

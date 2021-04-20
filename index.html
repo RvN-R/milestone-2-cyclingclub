@@ -42,7 +42,7 @@
             </div>
         </nav>
         <!--Header-->
-        <div class="header-container mb-4 rounded-3">
+        <div class="header-container rounded-3">
             <div class="container-fluid" id="header-hero-background-image">
                 <img src="assets/images/RamCyclingClubLogo.png" alt="Ram Cycling Club Logo" class="ramsCyclingClubLogo"
                     id="ramsCyclingClubLogo">
@@ -52,7 +52,7 @@
     <!--About Us-->
     <section class="container-fluid" id="about-us-section">
         <div class="row no-gutters">
-            <div class=" ps-5 col-sm-12">
+            <div class=" ps-5 text-center col-sm-12 about-use-heading">
                 <h2>About Us</h2>
             </div>
             <div class=" ps-5 pt-3 col-sm-6">
@@ -90,7 +90,7 @@
     <!--Club Rides-->
     <section class="container-fluid" id="club-rides-section">
         <div class="row no-gutters">
-            <div class="ps-5 col-sm-12">
+            <div class="ps-5 col-sm-12 text-center club-ride-heading">
                 <h2>Club Rides</h2>
             </div>
             <div class="col-sm-12 d-flex justify-content-center clubRideButtonsOutter">
@@ -118,7 +118,7 @@
     <!--Join the Crew-->
     <section class="container-fluid" id="join-the-crewsection">
         <div class="row no-gutters">
-            <div class="ps-5 col-sm-12">
+            <div class="ps-5 col-sm-12 text-center join-the-crew-heading">
                 <h2>Join the Crew</h2>
             </div>
         </div>
@@ -128,41 +128,44 @@
             </div>
             <div class="col-sm-12 d-flex justify-content-center">
                 <div>
-                    <form method="POST" action="#"></form>
-                    <div class="form-group mb-3">
-                        <label for="firstName">First Name:</label>
-                        <input type="text" class="form-control" id="firstName" name="first_name"
-                            aria-describedby="first_name" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" class="form-control" id="lastName" name="last_name"
-                            aria-describedby="last_name" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="age">Age:</label>
-                        <input type="number" class="form-control" id="age" name="age" aria-describedby="age" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email_address"
-                            aria-describedby="email" required>
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="repeatEmail">Confirm Email address</label>
-                        <input type="email" class="form-control" id="repeatEmail" name="repeat_email_address"
-                            aria-describedby="repeatEmail" required>
-                        <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                    </div>
-                    <div class="form-group form-check mb-3">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="newsletter_checkbox"
-                            required>
-                        <label class="form-check-label" for="exampleCheck1">Sign me up to recieve News Letter!</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary mb-5">Submit</button>
+                    <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form"
+                        target="_blank">
+                        <div class="form-group mb-3">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" class="form-control" id="firstName" name="first_name"
+                                aria-describedby="first_name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName" name="last_name"
+                                aria-describedby="last_name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="age">Age:</label>
+                            <input type="number" class="form-control" id="age" name="age" aria-describedby="age"
+                                required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email_address"
+                                aria-describedby="email" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="repeatEmail">Confirm Email address</label>
+                            <input type="email" class="form-control" id="repeatEmail" name="repeat_email_address"
+                                aria-describedby="repeatEmail" required>
+                            <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1"
+                                name="newsletter_checkbox" required>
+                            <label class="form-check-label" for="exampleCheck1">Sign me up to recieve News
+                                Letter!</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-5">Submit</button>
                     </form>
                 </div>
             </div>
