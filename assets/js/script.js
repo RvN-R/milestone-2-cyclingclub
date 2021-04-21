@@ -10,6 +10,7 @@ function initMap() {
         },
     });
 
+
     // Only exicute calculateAndDisplayLunchRoute when Lunch Time Button is Clicked
     directionsRenderer.setMap(map);
     document.getElementById("lunchTimeRideButton").addEventListener("click", () => {
@@ -23,7 +24,7 @@ function initMap() {
     });
 }
 
-//Below function provides the google initMap function the Orgin, Destination and Waypoint information to then render Lunch Time Route on the map. Also specify which mode of transport you want to use when following the route
+//Function creates an object called directionsService.route, which passes information to DirectionsRequest. 
 function calculateAndDisplayLunchRoute(directionsService, directionsRenderer) {
     directionsService.route({
             origin: 'The London Peace Pagoda, Carriage Drive North, London, UK',
@@ -49,8 +50,8 @@ function calculateAndDisplayLunchRoute(directionsService, directionsRenderer) {
             }, ],
             optimizeWaypoints: false,
             travelMode: google.maps.TravelMode.BICYCLING,
-        },
 
+        },
         // Provding API recieves OK route should be displayed in div with the ID "lunchTimeRideInfo"
         (response, status) => {
             if (status === "OK" && response) {
@@ -162,10 +163,11 @@ window.onload = function () {
         event.preventDefault();
         // generate a five digit number for the contact_number variable
         this.contact_number.value = Math.random() * 100000 | 0;
-        // these IDs from the previous steps
+        //once form exectus it resets the form and triggers a modal if successful. 
         emailjs.sendForm('contact_service', 'contact_form', this)
             .then(function () {
                 console.log('SUCCESS!');
+                $("#exampleModal").modal("toggle");
                 $("#contact-form").trigger("reset");
             }, function (error) {
                 console.log('FAILED...', error);
