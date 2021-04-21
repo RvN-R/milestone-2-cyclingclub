@@ -146,6 +146,17 @@ $("#lunchTimeRideButton").mouseleave(function () {
     $("#lunchTimeRideButton").removeClass("lunchTimeRideButtonActive").addClass("lunchTimeRideButtonPassive");
 });
 
+//Function controls hover effect of form-send-button
+
+$("#form-send-button").mouseenter(function () {
+    $("#form-send-button").removeClass("form-send-button-passive").addClass("form-send-button-active");
+});
+
+$("#form-send-button").mouseleave(function () {
+    $("#form-send-button").removeClass("form-send-button-active").addClass("form-send-button-passive");
+});
+
+// Function linking form to EmailJS
 window.onload = function () {
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();

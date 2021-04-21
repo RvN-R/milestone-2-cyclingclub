@@ -162,11 +162,34 @@ nav {
     color: #0ad6ff;
 }
 
-.btn-primary {
+form {
+    font-family: "lato", sans-serif;
+}
+
+.form-send-button-passive {
+    width: 50%;
+    height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "lato", sans-serif;
+    border-radius: 8px;
+    font-weight: 400;
+    background: #130a02;
+    color: #0ad6ff;
+    border: 4px solid #0ad6ff;
+}
+
+.form-send-button-active {
+    width: 50%;
+    height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "lato", sans-serif;
+    border-radius: 8px;
+    font-weight: 400;
+    background: #0ad6ff;
     color: #130a02;
-    background-color: #0ad6ff;
-    border-color: #0ad6ff;
-    font-family: "Lato", sans-serif;
+    border: 4px solid #130a02;
 }
 
 /*Footer*/

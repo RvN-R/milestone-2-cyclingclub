@@ -134,15 +134,27 @@
             </div>
             <div class="col-sm-12 d-flex justify-content-center">
                 <div class="center-form">
-                    <form id="contact-form">
-                        <input type="hidden" name="contact_number">
-                        <label>Name</label>
-                        <input type="text" name="user_name">
-                        <label>Email</label>
-                        <input type="email" name="user_email">
-                        <label>Message</label>
-                        <textarea name="message"></textarea>
-                        <input type="submit" value="Send">
+                    <form class="signup-form" id="contact-form">
+                        <div class="mb-3">
+                            <input type="hidden" name="contact_number">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="user_name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="user_email">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" placeholder="Tell us about yourself"
+                                name="message"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-send-button-passive" id="form-send-button" type="submit" value="Send">
+                        </div>
                     </form>
                 </div>
             </div>
