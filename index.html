@@ -58,7 +58,7 @@
     <!--About Us-->
     <section class="container-fluid" id="about-us-section">
         <div class="row no-gutters">
-            <div class=" ps-5 text-center col-sm-12 about-use-heading">
+            <div class="text-center col-sm-12 about-use-heading">
                 <h2>About Us</h2>
             </div>
             <div class=" ps-5 pt-3 col-sm-6">
@@ -96,7 +96,7 @@
     <!--Club Rides-->
     <section class="container-fluid" id="club-rides-section">
         <div class="row no-gutters">
-            <div class="ps-5 col-sm-12 text-center club-ride-heading">
+            <div class="col-sm-12 text-center club-ride-heading">
                 <h2>Club Rides</h2>
             </div>
             <div class="col-sm-12 d-flex justify-content-center clubRideButtonsOutter">
@@ -124,7 +124,7 @@
     <!--Join the Crew-->
     <section class="container-fluid" id="join-the-crewsection">
         <div class="row no-gutters">
-            <div class="ps-5 col-sm-12 text-center join-the-crew-heading">
+            <div class="col-sm-12 text-center join-the-crew-heading">
                 <h2>Join the Crew</h2>
             </div>
         </div>
@@ -133,49 +133,16 @@
                 <h4>Fill in Form to Express Interest!</h4>
             </div>
             <div class="col-sm-12 d-flex justify-content-center">
-                <div>
-                    <form id="signup-form" target="_blank">
-                        <div class="form-group mb-3">
-                            <label for="firstName">First Name:</label>
-                            <input type="text" class="form-control" id="firstName" name="first_name"
-                                aria-describedby="first_name" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="lastName">Last Name:</label>
-                            <input type="text" class="form-control" id="lastName" name="last_name"
-                                aria-describedby="last_name" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="age">Age:</label>
-                            <input type="number" class="form-control" id="age" name="age" aria-describedby="age"
-                                required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" name="email_address"
-                                aria-describedby="email" required>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="repeatEmail">Confirm Email address</label>
-                            <input type="email" class="form-control" id="repeatEmail" name="repeat_email_address"
-                                aria-describedby="repeatEmail" required>
-                            <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
-                        </div>
-                        <div class="form-group mb-3">
-                            <textarea rows="5" name="aboutme" class="form-control" id="aboutme"
-                                placeholder="Write a bit about youself and what you enjoy about riding..."
-                                required></textarea>
-                        </div>
-                        <div class="form-group form-check mb-3">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                name="newsletter_checkbox" required>
-                            <label class="form-check-label" for="exampleCheck1">Sign me up to recieve News
-                                Letter!</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary mb-5">Submit</button>
+                <div class="center-form">
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
+                        <label>Name</label>
+                        <input type="text" name="user_name">
+                        <label>Email</label>
+                        <input type="email" name="user_email">
+                        <label>Message</label>
+                        <textarea name="message"></textarea>
+                        <input type="submit" value="Send">
                     </form>
                 </div>
             </div>
@@ -213,7 +180,6 @@
             </div>
         </div>
     </footer>
-
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq8zDO33A16FC65PZsZzbuL11Mca_l2z0&callback=initMap&libraries=&v=weekly"
         async></script>

@@ -146,16 +146,11 @@ $("#lunchTimeRideButton").mouseleave(function () {
     $("#lunchTimeRideButton").removeClass("lunchTimeRideButtonActive").addClass("lunchTimeRideButtonPassive");
 });
 
-var templateParams = {
-    name: 'James',
-    notes: 'Check this out!'
-};
-
 window.onload = function () {
-    document.getElementById('signup-form').addEventListener('submit', function (event) {
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
         // generate a five digit number for the contact_number variable
-        this.first_name.value = Math.random() * 100000 | 0;
+        this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
         emailjs.sendForm('contact_service', 'contact_form', this)
             .then(function () {
