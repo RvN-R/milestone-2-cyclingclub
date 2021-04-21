@@ -140,20 +140,22 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Name</label>
-                            <input type="text" class="form-control" name="user_name">
+                            <input type="text" class="form-control" name="user_name" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Email</label>
-                            <input type="email" class="form-control" name="user_email">
+                            <input type="email" class="form-control" name="user_email" required>
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Message</label>
-                            <textarea class="form-control" placeholder="Tell us about yourself"
-                                name="message"></textarea>
+                            <textarea class="form-control" placeholder="Tell us about yourself" name="message"
+                                required></textarea>
                         </div>
                         <div class="mb-3">
-                            <input class="form-send-button-passive" id="form-send-button" type="submit" value="Send">
+                            <button class="form-send-button-passive" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" id="form-send-button" type="submit">Send</button>
+                            <!-- <input class="form-send-button-passive" id="form-send-button" type="submit" value="Send"> -->
                         </div>
                     </form>
                 </div>
@@ -192,6 +194,24 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Thanks for Getting in Touch!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-left">
+                    Thanks for getting in touch and submitting your interest in our fantastic club! We will have a look
+                    at your message and get back to you as soon as possible.
+
+                    Have a great day,
+
+                    Ram Cycling Club Team
+                </div>
+            </div>
+        </div>
+    </div>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq8zDO33A16FC65PZsZzbuL11Mca_l2z0&callback=initMap&libraries=&v=weekly"
         async></script>
