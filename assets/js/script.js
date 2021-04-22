@@ -44,7 +44,11 @@ function initMap() {
         }
     }]
 
-    console.log(ROUTES[0].routeName, ROUTES[0].routeDetails, directionsService, directionsRenderer);
+    directionsRenderer.setMap(map);
+    document.getElementById("lunchTimeRideButton").addEventListener("click", () => {
+        // calculateAndDisplayLunchRoute(directionsService, directionsRenderer);
+        console.log(ROUTES[0].routeName, ROUTES[0].routeDetails, directionsService, directionsRenderer)
+    });
 
 
 
