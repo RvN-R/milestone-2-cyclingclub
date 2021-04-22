@@ -53,12 +53,27 @@ function initMap() {
 
     /** Function calls parameters within the ROUTE variable and links that to directionService.route
      * 
+     * param {string} - route - provides string of location, which calls longitude and latitude information from pollyfill script in HTML
+     * 
+     * param {html} - summaryPanel - HTML of trip that is then pushed to a <div> with the id RideInfo 
      * 
      */
     function showRoute(routeName, route, directionsService, directionsRenderer) {
         directionsService.route(route, (response, status) => {
             if (status === "OK" && response) {
-                console.log(ROUTES[0].routeName, ROUTES[0].routeDetails, directionsService, directionsRenderer)
+                directionsRenderer.setDirections(response);
+                const route = response.routes[0];
+                const summaryPanel = document.getElementById("RideInfo");
+                summaryPanel.innerHTML = "";
+
+                // Display summary information for Lunch Time Ride.
+                for (let i = 0; i < route.legs.length; i++) {
+                    const routeSegment = i + 1;
+                    summaryPanel.innerHTML +=
+                        `<b>${routeName}:</b>" + "<br></br>`;
+                    summaryPanel.innerHTML += "<b>Meeting point: </b>" + route.legs[i].start_address + "<br></br>";
+                    summaryPanel.innerHTML += "<b>Total Distance of Route: </b>" + route.legs[i].distance.text + "<br></br>";
+                }
             } else {
                 window.alert("Directions request failed due to " + status);
             }
