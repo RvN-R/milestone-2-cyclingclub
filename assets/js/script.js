@@ -1,3 +1,4 @@
+//MAP JS 
 //initMap function initalises the map onto the page. 
 function initMap() {
     let directionsRenderer = new google.maps.DirectionsRenderer();
@@ -119,12 +120,7 @@ function initMap() {
 
     }
 
-
-
-
-
-
-
+    // JS for Styling HTML
     // Function controls hover effect of SaturdayRideButton
 
     $("#SaturdayRideButton").mouseenter(function () {
@@ -155,7 +151,14 @@ function initMap() {
         $("#form-send-button").removeClass("form-send-button-active").addClass("form-send-button-passive");
     });
 
-    // Function linking form to EmailJS
+    //JS FORM
+    /** Function linking form to EmailJS , if successful toggles a modal and resets form. 
+     * 
+     * para {string} - contact_service - Name of email template you are trying to link form with
+     * 
+     * para {string} - contact_form - Email Tempalates Template ID
+     * */
+
     window.onload = function () {
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
