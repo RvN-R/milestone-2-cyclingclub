@@ -52,6 +52,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    min-width: 25%;
 }
 
 #header-hero-background-image {

@@ -11,13 +11,13 @@ function initMap() {
     });
 
 
-    // Only exicute calculateAndDisplayLunchRoute when Lunch Time Button is Clicked
+    // Execute calculateAndDisplayLunchRoute when Lunch Time Button is Clicked
     directionsRenderer.setMap(map);
     document.getElementById("lunchTimeRideButton").addEventListener("click", () => {
         calculateAndDisplayLunchRoute(directionsService, directionsRenderer);
     });
 
-    // Only exicute calculateAndDisplaySaturdayRoute when Lunch Time Button is Clicked
+    // Execute calculateAndDisplaySaturdayRoute when Lunch Time Button is Clicked
     directionsRenderer.setMap(map);
     document.getElementById("SaturdayRideButton").addEventListener("click", () => {
         calculateAndDisplaySaturdayRoute(directionsService, directionsRenderer);
