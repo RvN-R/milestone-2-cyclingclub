@@ -16,38 +16,74 @@ function initMap() {
      */
 
     const ROUTES = [{
-        routeName: 'Lunch Ride',
-        routeDetails: {
-            origin: 'The London Peace Pagoda, Carriage Drive North, London, UK',
-            destination: 'Prince Albert, Albert Bridge Road, London, UK',
-            waypoints: [{
-                location: 'Chelsea Bridge, Chelsea Bridge Road, London, UK',
-                stopover: false
-            }, {
-                location: 'Embassy of Lithuania, Bessborough Gardens, London, UK',
-                stopover: false
-            }, {
-                location: 'Wellington Arch, Apsley Way, London, UK',
-                stopover: false
-            }, {
-                location: 'The Lodge Cafe., London, UK',
-                stopover: false
-            }, {
-                location: 'Will to Win Hyde Park Sport Centre, South Carriage Drive, London, UK',
-                stopover: false
-            }, {
-                location: 'Albert Bridge Road, London, UK',
-                stopover: false
-            }, ],
-            optimizeWaypoints: false,
-            travelMode: google.maps.TravelMode.BICYCLING,
+            routeName: 'Lunch Ride',
+            routeDetails: {
+                origin: 'The London Peace Pagoda, Carriage Drive North, London, UK',
+                destination: 'Prince Albert, Albert Bridge Road, London, UK',
+                waypoints: [{
+                    location: 'Chelsea Bridge, Chelsea Bridge Road, London, UK',
+                    stopover: false
+                }, {
+                    location: 'Embassy of Lithuania, Bessborough Gardens, London, UK',
+                    stopover: false
+                }, {
+                    location: 'Wellington Arch, Apsley Way, London, UK',
+                    stopover: false
+                }, {
+                    location: 'The Lodge Cafe., London, UK',
+                    stopover: false
+                }, {
+                    location: 'Will to Win Hyde Park Sport Centre, South Carriage Drive, London, UK',
+                    stopover: false
+                }, {
+                    location: 'Albert Bridge Road, London, UK',
+                    stopover: false
+                }, ],
+                optimizeWaypoints: false,
+                travelMode: google.maps.TravelMode.BICYCLING,
+            }
+        },
+
+        {
+            routeName: 'Saturday Ride',
+            routeDetails: {
+                origin: 'The Dynamo, Putney Bridge Road, London, UK',
+                destination: 'The Rocket, Brewhouse Lane, London, UK',
+                waypoints: [{
+                    location: 'Parkcycle Richmond Park, Roehampton Gate Car Park, Priory Lane, London, UK',
+                    stopover: false
+                }, {
+                    location: 'Isabella Plantation Cafe, Broomfield Hill, Kingston upon Thames, UK',
+                    stopover: false
+                }, {
+                    location: 'Kingston Gate, Richmond Park, Kingston upon Thames, UK',
+                    stopover: false
+                }, {
+                    location: 'The Royal Star and Garter Home, Richmond, UK',
+                    stopover: false
+                }, {
+                    location: 'Parkcycle Richmond Park, Roehampton Gate Car Park, Priory Lane, London, UK',
+                    stopover: false
+                }, {
+                    location: 'Parkcycle Richmond Park, Roehampton Gate Car Park, Priory Lane, London, UK',
+                    stopover: false
+                }, ],
+                optimizeWaypoints: false,
+                travelMode: google.maps.TravelMode.BICYCLING,
+            }
         }
-    }]
+    ]
 
     // addEventListener executes directions.Renderer when button with ID lunchTimeRideButton is clicked
     directionsRenderer.setMap(map);
     document.getElementById("lunchTimeRideButton").addEventListener("click", () => {
         showRoute(ROUTES[0].routeName, ROUTES[0].routeDetails, directionsService, directionsRenderer)
+    });
+
+    // addEventListener executes directions.Renderer when button with ID SaturdayRideButton is clicked
+    directionsRenderer.setMap(map);
+    document.getElementById("SaturdayRideButton").addEventListener("click", () => {
+        showRoute(ROUTES[1].routeName, ROUTES[1].routeDetails, directionsService, directionsRenderer)
     });
 
 
