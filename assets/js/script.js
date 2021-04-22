@@ -16,10 +16,10 @@ function initMap() {
      */
 
     const ROUTES = [{
-        routeName: 'LunchRide',
+        routeName: 'Lunch Ride',
         routeDetails: {
             origin: 'The London Peace Pagoda, Carriage Drive North, London, UK',
-            destination: 'The London Peace Pagoda, Carriage Drive North, London, UK',
+            destination: 'Prince Albert, Albert Bridge Road, London, UK',
             waypoints: [{
                 location: 'Chelsea Bridge, Chelsea Bridge Road, London, UK',
                 stopover: false
@@ -70,8 +70,9 @@ function initMap() {
                 for (let i = 0; i < route.legs.length; i++) {
                     const routeSegment = i + 1;
                     summaryPanel.innerHTML +=
-                        `<b>${routeName}:</b>" + "<br></br>`;
-                    summaryPanel.innerHTML += "<b>Meeting point: </b>" + route.legs[i].start_address + "<br></br>";
+                        `<b>${routeName}</b>` + "<br></br>";
+                    summaryPanel.innerHTML += "<b>Meeting point (A): </b>" + route.legs[i].start_address + "<br></br>";
+                    summaryPanel.innerHTML += "<b>Ending point (B): </b>" + route.legs[i].end_address + "<br></br>";
                     summaryPanel.innerHTML += "<b>Total Distance of Route: </b>" + route.legs[i].distance.text + "<br></br>";
                 }
             } else {
