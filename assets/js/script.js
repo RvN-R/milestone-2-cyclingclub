@@ -4,7 +4,7 @@ function initMap() {
     let directionsRenderer = new google.maps.DirectionsRenderer();
     let directionsService = new google.maps.DirectionsService();
     let map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
+        zoom: 12,
         center: {
             lat: 51.4793238,
             lng: -0.1581354

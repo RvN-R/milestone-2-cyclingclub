@@ -23,6 +23,14 @@ p {
     text-align: left;
 }
 
+h2 {
+    padding-top: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+
+}
+
+
 /*.body-style css used to center webite on larger screen sizes*/
 body {
     max-width: 2000px;
@@ -74,9 +82,10 @@ nav {
     width: 100%;
 }
 
-.about-use-heading {
+.about-us-heading {
     background-color: #130a02;
     color: #0ad6ff;
+    height: 75px;
 }
 
 /*Club Rides*/
@@ -84,10 +93,11 @@ nav {
 .club-ride-heading {
     background-color: #130a02;
     color: #0ad6ff;
+    height: 75px;
 }
 
 #map {
-    height: 400px;
+    height: 500px;
     /* The height is 400 pixels */
     width: 70%;
     /* The width is the width of the web page */
@@ -161,6 +171,7 @@ nav {
 .join-the-crew-heading {
     background-color: #130a02;
     color: #0ad6ff;
+    height: 75px;
 }
 
 form {
