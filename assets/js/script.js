@@ -44,12 +44,28 @@ function initMap() {
         }
     }]
 
+    // addEventListener executes directions.Renderer when button with ID lunchTimeRideButton is clicked
     directionsRenderer.setMap(map);
     document.getElementById("lunchTimeRideButton").addEventListener("click", () => {
-        // calculateAndDisplayLunchRoute(directionsService, directionsRenderer);
-        console.log(ROUTES[0].routeName, ROUTES[0].routeDetails, directionsService, directionsRenderer)
+        showRoute(ROUTES[0].routeName, ROUTES[0].routeDetails, directionsService, directionsRenderer)
     });
 
+
+    /** Function calls parameters within the ROUTE variable and links that to directionService.route
+     * 
+     * 
+     */
+    function showRoute(routeName, route, directionsService, directionsRenderer) {
+        directionsService.route(route, (response, status) => {
+            if (status === "OK" && response) {
+                console.log(ROUTES[0].routeName, ROUTES[0].routeDetails, directionsService, directionsRenderer)
+            } else {
+                window.alert("Directions request failed due to " + status);
+            }
+        });
+
+
+    }
 
 
 
