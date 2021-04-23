@@ -11,9 +11,7 @@ function initMap() {
         },
     });
 
-    /** Varible ROUTES holds name and details of route in an array. 
-     * param - {string} routeName holds the name of the route
-     * param - {string} routeDetails holds an array of the routes orign, destination and waypoint. 
+    /** Variable ROUTES - contains an array with lists of values associated the riding club routes 
      */
 
     const ROUTES = [{
@@ -75,7 +73,7 @@ function initMap() {
         }
     ]
 
-    // addEventListener executes directions.Renderer when button with ID lunchTimeRideButton is clicked
+    // addEventListener executes directions.Renderer when button with ID lunchTimeRideButton is clicked. 
     directionsRenderer.setMap(map);
     document.getElementById("lunchTimeRideButton").addEventListener("click", () => {
         showRoute(ROUTES[0].routeName, ROUTES[0].routeDetails, directionsService, directionsRenderer)
@@ -88,11 +86,11 @@ function initMap() {
     });
 
 
-    /** Function calls parameters within the ROUTE variable and links that to directionService.route
+    /** Function showRoute renders values from ROUTES on to the map, if successful displays summary information in HTML. 
      * 
-     * param {string} - route - provides string of location, which calls longitude and latitude information from pollyfill script in HTML
-     * 
-     * param {html} - summaryPanel - HTML of trip that is then pushed to a <div> with the id RideInfo 
+     * param {string} - routeName - provides route name - returns {HTML} 
+     * param {object} - directionsService - communicates with Google Maps API Direction Services which recieves direction requests - returns efficent path. 
+     * param {object} - directionsRenderer - communicates with Google Maps API - returns display polyline between the indicated locations. 
      * 
      */
     function showRoute(routeName, route, directionsService, directionsRenderer) {
@@ -103,11 +101,12 @@ function initMap() {
                 const summaryPanel = document.getElementById("RideInfo");
                 summaryPanel.innerHTML = "";
 
-                // Display summary information for Lunch Time Ride.
+
+                // Display summary information for ride.
                 for (let i = 0; i < route.legs.length; i++) {
                     const routeSegment = i + 1;
                     summaryPanel.innerHTML +=
-                        `<b>${routeName}</b>` + "<br></br>";
+                        `<b><h3>${routeName}</h3></b>` + "<br></br>";
                     summaryPanel.innerHTML += "<b>Meeting point (A): </b>" + route.legs[i].start_address + "<br></br>";
                     summaryPanel.innerHTML += "<b>Ending point (B): </b>" + route.legs[i].end_address + "<br></br>";
                     summaryPanel.innerHTML += "<b>Total Distance of Route: </b>" + route.legs[i].distance.text + "<br></br>";
@@ -124,23 +123,25 @@ function initMap() {
     // Function controls hover effect of SaturdayRideButton
 
     $("#SaturdayRideButton").mouseenter(function () {
-        $("#SaturdayRideButton").removeClass("SaturdayRideButtonPassive").addClass("SaturdayRideButtonActive");
+        $("#SaturdayRideButton").removeClass("button-passive").addClass("button-active");
     });
 
     $("#SaturdayRideButton").mouseleave(function () {
-        $("#SaturdayRideButton").removeClass("SaturdayRideButtonActive").addClass("SaturdayRideButtonPassive");
+        $("#SaturdayRideButton").removeClass("button-active").addClass("button-passive");
     });
 
+    // JS for Styling HTML
     // Function controls hover effect of lunchTimeRideButton
 
     $("#lunchTimeRideButton").mouseenter(function () {
-        $("#lunchTimeRideButton").removeClass("lunchTimeRideButtonPassive").addClass("lunchTimeRideButtonActive");
+        $("#lunchTimeRideButton").removeClass("button-passive").addClass("button-active");
     });
 
     $("#lunchTimeRideButton").mouseleave(function () {
-        $("#lunchTimeRideButton").removeClass("lunchTimeRideButtonActive").addClass("lunchTimeRideButtonPassive");
+        $("#lunchTimeRideButton").removeClass("button-active").addClass("button-passive");
     });
 
+    // JS for Styling HTML
     //Function controls hover effect of form-send-button
 
     $("#form-send-button").mouseenter(function () {
@@ -154,9 +155,9 @@ function initMap() {
     //JS FORM
     /** Function linking form to EmailJS , if successful toggles a modal and resets form. 
      * 
-     * para {string} - contact_service - Name of email template you are trying to link form with
+     * para {string} - contact_service - Name of the email template within the EmailJS account that you are trying to link form too - returns {string}
      * 
-     * para {string} - contact_form - Email Tempalates Template ID
+     * para {string} - contact_form - Email Tempalates Template ID - returns {string}
      * */
 
     window.onload = function () {
