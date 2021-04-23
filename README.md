@@ -52,16 +52,15 @@ Lato is the font chosen for use across the site, with Sans Serif as the back up 
 
 ###  Wireframe Mockups - Desktop
 
-* Home
+* <a href="readme-assets/readme-images/RamCyclingClubWebsite-Desktop-Home.png">Home</a>
 * <a href="readme-assets/readme-images/RamCyclingClubWebsite-Desktop-ClubRide.png">Club Ride</a>
-* Join the Crew
+* <a href="readme-assets/readme-images/RamCyclingClubWebsite-Desktop-ContactForm.png">Join the Crew</a>
 
 ###  Wireframe Mockups - Mobile
 
-* Home
-* Club Ride
-* Join the Crew
-
+* <a href="readme-assets/readme-images/RamCyclingClubWebsite-Mobile-Home.png">Home</a>
+* <a href="readme-assets/readme-images/RamCyclingClubWebsite-Mobile-ClubRide.png">Club Ride</a>
+* <a href="readme-assets/readme-images/RamCyclingClubWebsite-Mobile-ContactForm.png">Join the Crew</a>
 
 
 
