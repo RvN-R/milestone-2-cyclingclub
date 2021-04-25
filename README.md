@@ -154,16 +154,34 @@ The project was deployed to GitHub Pages using the following steps:
 
 ## Credits
 
+### Code
+
+* I used the <a href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/">"Navbar Example</a> on the Bootstrap website as inspiration for the sites navigation bar and remote view navigation bar. 
+
+* I used the <a href ="https://www.emailjs.com/docs/tutorial/creating-contact-form/">"EmailJS Creating Contact Form Tutorial</a> to help connect the websites "Join the Crew" contact form to the cycling clubs Googlemail email address they use for club admin. 
+
+* I used Google Maps Platforms <a href ="https://developers.google.com/maps/documentation/javascript/directions#maps_directions_waypoints-javascript"> Directions Service Overview</a> giving an indepth overview to all of the features within Maps Javascript API. I used this document to better understand how to implement the nessary features I wanted my site to adopt. 
+
+* I used Google Maps Platforms <a href ="https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints"> Waypoints in Directions Tutorial</a> to understand the process of feeding my showRoute function waypoint information in order to render these points on the map. 
+
+* I used Google Maps Platforms <a href="https://developers.google.com/maps/documentation/javascript/adding-a-google-map">Adding a Google Map with a Marker to Your Website</a> to understand how to get the map to display in the "Club Rides" section and how to make London appear on the map during the pages intital load up. 
+
+### Content
+
+All text content on this side including "About Us" "Club Rides" and "Join the Crew" have been written by me. 
+
+Company Logo was created by me using Photoshop. 
+
+### Media
+
+Images used on this website were sourced from a website called <a href="https://unsplash.com/">Unsplashed</a>. 
+
+Images Used
+* <a href="https://unsplash.com/photos/WUehAgqO5hE">Header Background Hero Image</a>
+* <a href="https://unsplash.com/photos/TQZlo6cC4s0">About Us Hero Image</a>
 
 
-
-
-
-
-
-
-
-
-### Images Used
-* Header Hero Image - https://unsplash.com/photos/WUehAgqO5hE
-* About Us Hero Image - https://unsplash.com/photos/TQZlo6cC4s0
+## Aknowledgements
+* Special thakns to my mentor Brian Macharia.
+* Special thanks to fellow students on Slack for support during the completiton of MS2. 
+* Thanks to the team of tutors at COde Institute for their support. 
