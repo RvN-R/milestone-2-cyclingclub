@@ -63,7 +63,7 @@ Lato is the font chosen for use across the site, with Sans Serif as the back up 
 * <a href="readme-assets/readme-images/RamCyclingClubWebsite-Mobile-ClubRide.png">Club Ride</a>
 * <a href="readme-assets/readme-images/RamCyclingClubWebsite-Mobile-ContactForm.png">Join the Crew</a>
 
-# Features
+## Features
 
 The page consists of three sections, at the top of the page is a navigation bar that runs the width of the page. This navigation bar is sticky meaning when those visitng scoll down the page the navigation remains in the same position. Just below the navigation bar is a large banner runnig the width of the page. Centered within the banner is the clubs logo along with a hero image used as the banners background. The colours used in the Navigation Bar match those used in the clubs logo. You'll notice in the clubs logo the name and clubs date of establishment is housed within blue banners. Taking insperiaton of this we have used Vivid Sky Blue for the navigation bars main font colour and Smoky Black as the background colour. To inform the visitor that there mouse is over a navigation link I used the colour Rufous as a hover effect to change the font colour. The navigation bar features navigational links to About Us, Club Rides and Join the Crew. At the bottom of the page is a footer with social media icons linking to the clubs soical media accounts. The fotter eachoes those colours used for the navigation bar, ensuring a coherent design approach. 
 
@@ -79,12 +79,47 @@ The Club Ride section has a simple layout in order to maximise attention from th
 
 ### <i>Join the Crew</i>
 
-Join the Crew section adopts the simple approach used in the previous section. The sections main focus is an interactive form, that allows those visiting the site to express interest in joining the club. Once they fill out the name, email sections they also have the oppertuntiy to fill out a small text area detailing why they want to join the club. This attribute will be invaluable to sales admin, once enquiries start to increase. Once submitted the form gets emails to a club admin email address. The Club will then respond to all enquires with an information pack detaling the next "New Memebers Ride". The submit button on the form incorporates the same colour palette used in previous call to action buttons on the site.  
+Join the Crew section adopts the simple approach used in the previous section. The sections main focus is an interactive form, that allows those visiting the site to express interest in joining the club. Once they fill out the name, email sections they also have the oppertuntiy to fill out a small text area detailing why they want to join the club. This attribute will be invaluable to sales admin, once enquiries start to increase. Once submitted the form gets emails to a club admin email address. The Club will then respond to all enquires with an information pack detaling the next "New Memebers Ride". Once submitted a modal will appear informing the visitor that there enquiry has been submitted correctly. The submit button on the form incorporates the same colour palette used in previous call to action buttons on the site.  
+
+## Existing Features
+
+* <i>Header Navigation Bar</i> - Bar is fixed meaning that no matter how far the visitor scolls down the page the bar appears in the same position on the screen. This allows the user to easily navigate across the site. 
+* <i>Remote View Navigation Bar</i> - In remote screen sizes a full size navigation bar would get overbearing and take up much needed screen space. Remote view will allow vistors to either scroll up and down the page to find the relevant sections, or toggle the remote view naviagtion bar to better navigate. 
+* <i>Footer Social Icons</i> - Exists at the bottom of the page and allows the visitor to access the clubs social media platforms. 
+* <i>Call to Action Buttons</i> - Exists in the Club Ride, and Join the Crew sections of the site. Allow the visitor to quickly access key information and communciate with the clubs admin team. 
+* <i>About Us</i> - Allows the visitor to understand the clubs history, values and what they represent to the local community. 
+* <i>Map and Route Directions</i> - Incorporating Google Maps Javascript and Directions API this feature informs those visiting the site on where the clubs rides take place, as well as the distance covered should you follow the route.
+* <i>Form</i> - This interactive feature is linked to the club admins google mail using EmailJS. This features allows those interested to express interst in joining the club, and allows the club to effectivly manage and increase its memebership. 
+* <i>Modal</i> - Notifies the visitor that there enquiry has been successful, and when to expect to hear back.   
+
+## Features Left to Implement
+
+* <i>GDPR Checkbox</i> - Allows the visitor to approve the use of there email address to inform them of future actions. Also ensures the cycling club complies with EU data protection law. 
+<i>Gallery</i> - As the cycling groups membership grows over time they may choose to include a members gallery where they can share photos of Club Rides, or local community events they have organised. 
+<i>Incorporating Longitude and Latitude</i> - At present I've used strings in order to communicate the cycling routes origin, destination and waypoints with Googles DirectionsRenderer and DirectionsService objects, using a polyfill script at the top of the index.html page. Fortunately Google has an extensive libary of locations across London premapped, and accepts strings in order to render these locations on the map. However,  in the future I need to experiment with incorporating longitude and latitude instead of strings. This will allow the routes to be more accurate, and less relient on Googles location libary. 
+
+<b>ADD MORE ON ADDING MORE RIDES WITHOUT REWRITTING THE LOGIC</b>
+
+## Technologies Used
+
+* This website used HTML, CSS and Javascript programming languages
+
+* <a href="https://getbootstrap.com/"> Bootstrap CDN:</a> This project uses Bootstrap5 to help make the website responsive.
+* <a href="https://jquery.com/">jQuery:</a> This project uses JQuery to help make the website more interactive.
+* <a href="https://popper.js.org/">Popper.js:</a> This project uses Popper.js Javascript for the modal used on the "Join the Crew" section.
+* <a href="https://fonts.google.com/">Google Fonts:</a> This project uses Google Fonts to style the website's fonts.
+* <a href="https://fontawesome.com/">Font Awesome:</a> This project uses Font Awesome in the footer of the website to add social media icons. 
+* <a href="https://www.adobe.com/uk/products/photoshop.html"> Adobe Photoshop:</a> This project uses Photoshop to design and create the Cycling Clubs logo found in the header. 
+* <a href="https://coolors.co/">Coolors:</a> This project used Coolors to help decide which colour pallete best meet the clients requirements and brand image. 
+* <a href="https://balsamiq.com/">Balsamiq:</a> This project uses Balsamiq to create wireframes during the UX stages.
+* <a href="https://git-scm.com/">Git:</a> Git was used for version control, using the Gitpod terminal to add, commit to Git and Push to Github. 
+* <a href="https://github.com/"> GitHub:</a> Github was used to store the project's code after being pushed from Git. 
+* <a href="https://stackedit.io/">StackEdit:</a> it was used to confirm layout and spell check my README and TESTING md files
+* <a href="https://cloud.google.com/maps-platform/#products">Google Cloud - Google Maps Platform:</a> This project uses two Google Map API's (Maps Javascript API and Directions API) to render routes onto a Map featured in the Club Ride section. 
+* <a href="https://www.emailjs.com/">EmailJS:</a> This project uses EmailJS to connect a form found in the "Join the Crew" section with the club admins googlemail account. 
 
 
 
-
- 
 
 
 
