@@ -95,8 +95,10 @@ Join the Crew section adopts the simple approach used in the previous section. T
 ## Features Left to Implement
 
 * <i>GDPR Checkbox</i> - Allows the visitor to approve the use of there email address to inform them of future actions. Also ensures the cycling club complies with EU data protection law. 
-<i>Gallery</i> - As the cycling groups membership grows over time they may choose to include a members gallery where they can share photos of Club Rides, or local community events they have organised. 
-<i>Incorporating Longitude and Latitude</i> - At present I've used strings in order to communicate the cycling routes origin, destination and waypoints with Googles DirectionsRenderer and DirectionsService objects, using a polyfill script at the top of the index.html page. Fortunately Google has an extensive libary of locations across London premapped, and accepts strings in order to render these locations on the map. However,  in the future I need to experiment with incorporating longitude and latitude instead of strings. This will allow the routes to be more accurate, and less relient on Googles location libary. 
+* <i>Gallery</i> - As the cycling groups membership grows over time they may choose to include a members gallery where they can share photos of Club Rides, or local community events they have organised. 
+* <i>Club Store</i> - As the cycling group grows they may want add a store section to the page, offering cycling jerseys, cycling caps and other merchandise. 
+* <i>Processing Payments</i> - When the store is implemented then a payment processing API is going to have to be adopted in order to process payments on the site. Additional backend is going to have to be implemented. 
+* <i>Incorporating Longitude and Latitude</i> - At present I've used strings in order to communicate the cycling routes origin, destination and waypoints with Googles DirectionsRenderer and DirectionsService objects, using a polyfill script at the top of the index.html page. Fortunately Google has an extensive libary of locations across London premapped, and accepts strings in order to render these locations on the map. However,  in the future I need to experiment with incorporating longitude and latitude instead of strings. This will allow the routes to be more accurate, and less relient on Googles location libary. 
 
 <b>ADD MORE ON ADDING MORE RIDES WITHOUT REWRITTING THE LOGIC</b>
 
@@ -117,6 +119,43 @@ Join the Crew section adopts the simple approach used in the previous section. T
 * <a href="https://stackedit.io/">StackEdit:</a> it was used to confirm layout and spell check my README and TESTING md files
 * <a href="https://cloud.google.com/maps-platform/#products">Google Cloud - Google Maps Platform:</a> This project uses two Google Map API's (Maps Javascript API and Directions API) to render routes onto a Map featured in the Club Ride section. 
 * <a href="https://www.emailjs.com/">EmailJS:</a> This project uses EmailJS to connect a form found in the "Join the Crew" section with the club admins googlemail account. 
+
+## Testing
+
+Testing information can be found on a separate <a href="#">Testing Readme</a>. 
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps: 
+ 1. Log into GitHub and locate the correct GitHub Repository.
+ 1. At the top of the Repository, locate the Settings button (settings should be depicted as three dots). 
+ 1. On the right hand side of the page, you will notice a list of categories. Click the second to last category called "Pages". 
+ 1. Under "Source", click the drop down called "None" and select "Master".
+ 1. Under the folder drop down menu select "root". 
+ 1. Click "Save". 
+ 1. You will now see the published <a href="https://rvn-r.github.io/milestone-2-cyclingclub/">site</a> link. 
+
+### Cloning Repository Using Command Line
+1. Log into GitHub and locate the correct GitHub Repository.
+1. Above the list located to the right of the green "Gitpod" button click code. 
+1. Under Clone you will see three options HTTPS, SSH and GitHub CLI. Choose which option you prefer and then click the copy icon next to the URL to copy it. 
+1. Open Terminal. 
+1. Change the current working directory to location where you want the cloned directory. 
+1. Type git clone, and then paste the URL copied earlier during step 3. 
+1. Press Enter to create your local clone. 
+
+### Cloning Repository To GitHub Desktop
+1. Log into GitHub and locate the correct GitHub Repository.
+1. Above the list located to the right of the green "Gitpod" button click code. 
+1. Click "Open with GitHub Desktop" to clone and open the repository with GitHub Desktop. 
+1. Gollow the prompts in GitHub Desktop to complete the clone. 
+
+## Credits
+
+
+
 
 
 
