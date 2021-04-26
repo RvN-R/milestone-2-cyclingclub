@@ -75,11 +75,18 @@ nav {
 
 /* About Us*/
 
-.about-us-hero-image {
+.about-us-hero-image-first {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
+}
+
+.about-us-hero-image-second {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 .about-us-heading {

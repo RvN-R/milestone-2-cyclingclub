@@ -69,9 +69,9 @@ The page consists of three sections, at the top of the page is a navigation bar 
 
 ### <i>About Us</i>
 
-The About Us section consists of one large paragraph explaining the clubs history, benefits, activites and goals for the future. In order to better deliver the key information to those reading this section, I have used one large hero image that shares the  the clubs connotations that of group paticipation. 
+The About Us section consists of one large paragraph explaining the clubs history, benefits, activites and goals for the future. In order to better deliver the key information to those reading this section, I have used two large hero images that shares the clubs image of community.
 
-To make the page easier to digest on remote devices the hero image isn't visable on smaller screen sizes. The image would take up valuable screen space and not provide any additonal benifit. 
+To make the page easier to digest on remote devices the hero images having been disablled on smaller screen sizes. The image would take up valuable screen space and not provide any additonal benifit. 
 
 ### <i>Club Ride</i>
 
@@ -174,11 +174,13 @@ Company Logo was created by me using Photoshop.
 
 ### Media
 
-Images used on this website were sourced from a website called <a href="https://unsplash.com/">Unsplashed</a>. 
+Images used on this website were sourced from a website called <a href="https://unsplash.com/">Unsplashed</a> and <a href="https://www.theramquarter.com/">Ram Quater website</a>  
 
 Images Used
 * <a href="https://unsplash.com/photos/WUehAgqO5hE">Header Background Hero Image</a>
-* <a href="https://unsplash.com/photos/TQZlo6cC4s0">About Us Hero Image</a>
+
+* <a href="https://unsplash.com/photos/TQZlo6cC4s0">First About Us Hero Image</a>
+* <a href="https://www.theramquarter.com/the-ram-quarter/history/">Second About Us Hero Image</a>
 
 
 ## Aknowledgements
