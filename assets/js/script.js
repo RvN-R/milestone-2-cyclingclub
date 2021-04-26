@@ -73,15 +73,15 @@ function initMap() {
         }
     ]
 
-    // addEventListener executes directions.Renderer when button with ID lunchTimeRideButton is clicked. 
+    // addEventListener executes directions.Renderer when button with ID lunch-time-ride-button is clicked. 
     directionsRenderer.setMap(map);
-    document.getElementById("lunchTimeRideButton").addEventListener("click", () => {
+    document.getElementById("lunch-time-ride-button").addEventListener("click", () => {
         showRoute(ROUTES[0].routeName, ROUTES[0].routeDetails, directionsService, directionsRenderer)
     });
 
-    // addEventListener executes directions.Renderer when button with ID SaturdayRideButton is clicked
+    // addEventListener executes directions.Renderer when button with ID saturday-ride-button is clicked
     directionsRenderer.setMap(map);
-    document.getElementById("SaturdayRideButton").addEventListener("click", () => {
+    document.getElementById("saturday-ride-button").addEventListener("click", () => {
         showRoute(ROUTES[1].routeName, ROUTES[1].routeDetails, directionsService, directionsRenderer)
     });
 
@@ -122,23 +122,23 @@ function initMap() {
     // JS for Styling HTML
     // Function controls hover effect of SaturdayRideButton
 
-    $("#SaturdayRideButton").mouseenter(function () {
-        $("#SaturdayRideButton").removeClass("button-passive").addClass("button-active");
+    $("#saturday-ride-button").mouseenter(function () {
+        $("#saturday-ride-button").removeClass("button-passive").addClass("button-active");
     });
 
-    $("#SaturdayRideButton").mouseleave(function () {
-        $("#SaturdayRideButton").removeClass("button-active").addClass("button-passive");
+    $("#saturday-ride-button").mouseleave(function () {
+        $("#saturday-ride-button").removeClass("button-active").addClass("button-passive");
     });
 
     // JS for Styling HTML
     // Function controls hover effect of lunchTimeRideButton
 
-    $("#lunchTimeRideButton").mouseenter(function () {
-        $("#lunchTimeRideButton").removeClass("button-passive").addClass("button-active");
+    $("#lunch-time-ride-button").mouseenter(function () {
+        $("#lunch-time-ride-button").removeClass("button-passive").addClass("button-active");
     });
 
-    $("#lunchTimeRideButton").mouseleave(function () {
-        $("#lunchTimeRideButton").removeClass("button-active").addClass("button-passive");
+    $("#lunch-time-ride-button").mouseleave(function () {
+        $("#lunch-time-ride-button").removeClass("button-active").addClass("button-passive");
     });
 
     // JS for Styling HTML
