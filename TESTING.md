@@ -35,3 +35,29 @@ Informaiton on physical requirements is mentioned briefly within the "About Us" 
 * ###  We need a platform that not only informs potential new memebers of why they should join the club, but give them the oppertunity to express interest in joining. 
 
 The whole site acts as a advert for why someone should join the cycling club. The "About Us" section informs the visitor about the clubs history and what they offer there current memebers. The "Club Ride" section advertises the clubs two routes using an interactive Javascript element to render the route on a map. This reinforces the key selling points highlighted in the "About Us" section, that of a collobrative and team spirit. Once the "About Us" and "Club Ride" section have sold the club experience to the vistor, then the form within the "Join the Crew" section. Once the form is submitted it will be emailed to the club admins Googlemail address using EmailJS. The admin team are then able to progress that enquiry in the hope of adding a new member to the club. 
+
+## Testing User Stories from UX section in README
+
+### Testing First Time Visitor Goals
+1. As a First Time Visitor, I want to easily understand the main purpose of the site, and learn more about the orgaization. 
+    * About Us section features 5 paragraphs explaining the cycling clubs values, with hero images to reinforce those connotations. 
+
+1. As a First Time Visitor, I want to be able to easily navigate through the site to find key content
+    * No matter the section the visitor is on, they can navigate betwween the sections on the site using the navigation bar found within the header. 
+    * The Navigation Bar on smaller devices toggles to a remote view. This still allows the visitor to navigate across the site, without compromisng the readabilty of important information. 
+    * Colours used for hover selectors remains consistant through out the site. Whether the link is used for navigating to internal sections, or extenal social media accounts the user assocaites the colours used with the function. 
+
+1. As a First Time Visitor, I want to clearly find out what makes this organization different from its competitors.
+    * The "About Us" section features four paragraphs explaining the clubs unique selling points over other local cycling clubs. It also features hero images in add to that explanation. 
+
+1. As a First Time Visitor, I want to source information that validates the organizations legitimacy, are they a respected club to be assocaited with as a memeber. 
+    * In the footer of the site are three social icons linked to the clubs social media sites. The sites open up in a different tab, so the visitor can contiune their journey though the website without being diverted to a different website. 
+
+### Testing Returning Visitor Goals
+1. As a Returning Visitor, I want to be able to navigate to see whether any new routes have been added to the group. 
+    * Using the Navigation Bar a returning visitor can quickly find the "Club Ride" section where club routes are featured. Alternatively, the sites sections are listed in order of priority, "Club Ride" section appears relativley early when a visitor scolls down the page. If they are a returing visitor this process will be even quicker. If any new routes have been added a new call to action button will have appeared. This button will have the name of the route, and once clicked will render the route and display key information relating to it. 
+
+1. As Returning Visitor, I want to navigate to the sign up section.
+    * Using the Navigation Bar a returning visitor can quickly find the "Join the Crew" section where the sign up form is featured. 
+
+
