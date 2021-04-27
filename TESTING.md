@@ -55,9 +55,58 @@ The whole site acts as a advert for why someone should join the cycling club. Th
 
 ### Testing Returning Visitor Goals
 1. As a Returning Visitor, I want to be able to navigate to see whether any new routes have been added to the group. 
-    * Using the Navigation Bar a returning visitor can quickly find the "Club Ride" section where club routes are featured. Alternatively, the sites sections are listed in order of priority, "Club Ride" section appears relativley early when a visitor scolls down the page. If they are a returing visitor this process will be even quicker. If any new routes have been added a new call to action button will have appeared. This button will have the name of the route, and once clicked will render the route and display key information relating to it. 
+    * Using the Navigation Bar a returning visitor can quickly find the "Club Ride" section where club routes are featured. The Navigation Bar is sticky meaning it always stays at the top of the page, allow the visitor to easly navigate to the "Club Ride" section no matter there location. If any new routes have been added a new call to action button will have appeared. This button will have the name of the route, and once clicked will render the route and display key information relating to it. 
 
 1. As Returning Visitor, I want to navigate to the sign up section.
-    * Using the Navigation Bar a returning visitor can quickly find the "Join the Crew" section where the sign up form is featured. 
+
+    * Using the Navigation Bar a returning visitor can quickly find the "Join the Crew" section where the sign up form is featured. The Navigation Bar is sticky meaning it always stays at the top of the page, allowing the visitor to easly navigate to the "Join the Crew" section no matter there location. Once there the form is simple to complete and with 4 clicks the visitor can submit interest. 
+
+## Testing client Requirements featured in README
+
+## Navigation
+* Load of Website. 
+* Right click and select inspection.
+* Change the screen size from desktop to tablet, then change from tablet to smaller devices and verify that the navigation bar is responsive. 
+* Confirm that the text in the navigation buttons isn't restricted by differing screen sizes. 
+* Verify that small screen sizes result in the navigation bar to toggle into remote view using a nav button. 
+* Once navigation bar goes into remote view, press nav button and confirm that links appear in drop down.
+* Press each link in turn and confirm that you are transported to the relative section of the website. 
+* Go back into desktop view and hover over the navigation links, make sure the hover selection function works for each link.
+* Click each link and make sure you are transported to the correct section of the site. 
+* Repeat verfication of functionality and responsiveness on iPhone and iPad.  
+
+## About Us Section
+* Load of Website. 
+* Right click and select inspection.
+* Scoll down the page to About Us Section. 
+* Change screen size from desktop to tablet, then change from tablet to smaller devices and verify hero images and text are appearing as designed. For X Large and Large screen sizes text and one hero Image should appear. Medium screen sizes two hero images should appear along with the text. Finally small screen sizes and below only the text should appear and no hero images. 
+
+## Club Ride Section
+* Load of Website. 
+* Right click and select inspection.
+* Scoll down the page to Club Ride Section.
+* Change the screen size from desktop to tablet, then change from tablet to smaller devices, verify that the map, and both the call to action buttons appearance isn't effected by differing aspect ratios. 
+* Hover over call to action button for both Lunch Time Ride and Saturday Ride, confirm that hover function works. Buttons text and borders should be Vivid Sky Blue and background Smoky Black. However, when the mouse runs over the button the colors invert so the background is Vivid Sky Blue and buttons and text are Smoky Black. 
+* Peform the following manual check <b>CLUB RIDE > CLICK "Saturday Ride" BUTTON</b> the appropriate route should appear on the amp. In additon key informatiom to the route should appear in a new div detailing routes Meeting Point, Ending Point and Duration. 
+* Peform the following manual check <b>CLUB RIDE > CLICK "Lunch Time Ride" BUTTON</b> the appropriate route should appear on the amp. In additon key informatiom to the route should appear in a new div detailing routes Meeting Point, Ending Point and Duration. 
+
+## Join the Crew
+* Load of Website. 
+* Right click and select inspection.
+* Scoll down the page to "Join the Crew" Section.
+* Change the screen size from desktop to tablet, then change from tablet to smaller devices, verify that the forms appearance isn't effected by differing aspect ratios. 
+* Click the call to action button labelled "Send" without filling out any of the form, confirm that warning  requesting to fill in outstanding fields. 
+* Fill in the "Name" field and then click the call to action button labelled "Send", confirm that you get a warning requesting to fill in outstanding fields. 
+* Repeat above process for both "Email" and "Message" to confirm that the empty field warnings are working as designed. 
+* Fill in all of the fields, then click the he call to action button labelled "Send". Providing you are still in inspect mode when you check this you should see "SUCCESS!" confirming the form was submitted successfuly. 
+* When you perform the previous process a modal should also appear informing the visitor what will happen following the submission of there form. 
+* Click the X in the right hand corner of the modal to close it, confirm that the form as reset. 
+* Log into the Ram Cycling Admin Teams Googlemail address, an unread email should be in the inbox, with the information you previously submitted. 
 
 
+
+## Footer
+* Hover over each social media icon and confirm color of hover select function is working as designed. Color should be Vivid Sky Blue and turn Rufous once mouse hovers over the icon. 
+* Perform the following manual check: <b>HOME > SCROLL to FOOTER > CLICK ICON</b>. When you click the icon a new tab whould open with the clubs relevant social media account. 
+* Reduce screen size to verify that the icon's size is responsive, and they remain centered. 
+* Also confirm the footer itself is responsive by decreasing and increasing screen sizes. 
