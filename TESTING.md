@@ -6,10 +6,32 @@ I used <a href="https://validator.w3.org/"> Markup Validation Service</a>,  <a h
 
 I used Chromes inspect feature Lighthouse on my page, to improce the sites perfoamnce. The report found the following: 
 
-* <b>Performance</b> - Scored 46 - This was the lowest scoring part of the Lighthouse test. The main points of criticism was "Time to Interactive", "Speed Index" and "Largest Contentful Paint". I was expecting that the creative decision to have a large image within the header would cause the website to score low when it came to load time, but hadn't taken into considersation how much this would effect the score. Following the test I experimented with different codecs and replaced a number of PNG's with compressed JPEG's in an attempt to improve this, but to now avail. 
+* <b>Performance</b> - Scored 46 for Desktop and 88 for Mobile - This was the lowest scoring part of the Lighthouse test for this site. The main points of criticism was "Time to Interactive", "Speed Index" and "Largest Contentful Paint". I was expecting that the creative decision to have a large image within the header would cause the website to score low when it came to load time, but hadn't taken into considersation how much this would effect the score. Following the test I experimented with different codecs and replaced a number of PNG's with compressed JPEG's in an attempt to improve this, but to now avail. 
 
-* <b>Accessibility</b> - Scored 91 - This was a high scoring part of the Lighthouse test. The test flagged up small issues like "Heading elements are not in a sequentially-descending order" and "Links do not have a discernible name". However, all of these comments don't effect the overall performance of the site and are linked to creative decisons to prioritise the aesthic design by having the navigation bar at the top of the header, and use Font Awesome icons instead of text to link the cycling clubs social media accounts in the footer of the site.  
+* <b>Accessibility</b> - Scored 91 for Desktop and 88 for Mobile - This was a high scoring part of the Lighthouse test. The test flagged up small issues like "Heading elements are not in a sequentially-descending order" and "Links do not have a discernible name". However, all of these comments don't effect the overall performance of the site and are linked to creative decisons to prioritise the aesthic design by having the navigation bar at the top of the header, and use Font Awesome icons instead of text to link the cycling clubs social media accounts in the footer of the site.  
 
-* <b>Best Practices</b> - Scored 87 - 
+* <b>Best Practices</b> - Scored 87 for Desktop and 93 for Mobile - Another high scoring sectiong of the Lighthouse test, only significate suggestion flagged was "Links to cross-origin destinations are unsafe". When you link to a page on another site using the target="_blank" attribute, you can expose your site to performance and security issues. Its suggested to use "<rel="noopener">" in the social media icon links. This improved the results in the Best Practices section. 
 
-* <b>SEO</b>
+* <b>SEO</b> - Scored 90 for Desktop and 92 for Mobile - Again another high scoring section of the Lighthouse test, and only received limited suggestions none of which were applicable to the improved running of the site. 
+
+## Testing client Requirements featured in README
+
+* ###  We need a platform that illustrates and shares our key values.
+
+No matter what section of the site the visitor is currently enhabiting, they have the abilty to navigate to the "About Us" section of the site using the navigation bar or by scolling to that section. The "About Us" section contains key information and explains the cycling clubs key values with the help of her images that echo the connotation of the text. 
+
+* ###  We need a platform that depicts and captures the clubs brand image. 
+
+I've created a banner within the header of the site. Its use is to capture the main ethos of the cycling club. Although its quite a large piece of relastate for a single element of the site its of high importance. It presents the vistor with the clubs logo, which colors and feel echo back to historic cycling clubs. The colours have been used extensivly throughout the site, keeping a consistent theme running through the webiste. The use of Lato font family gives the logo a quirky fun appearance, and I've continued to use this font family throughout the site. All of these characteristics are tied together with a cycling hero image used as the banners background. 
+
+* ###  We need a platfom that succinctly explains who we are and the function of the club to the local cycling community.
+
+I have deployed the three main sections of this website in order of importance. The "About Us" section appears first and is easy to a visitor to navigate to using the navigation bar, or scolling to it. Its main purpose is to succinctly express the clubs main function and how they are connected to local community. The club is passionate about the local community as its named after a important piece of local history. This is evident to the visitor from the text within the paragraphs and hero images. 
+
+* ###  We need a platform that politely gives an indication of the phyiscal requirments potential memebers need to poses in order to be an active memeber. 
+
+Informaiton on physical requirements is mentioned briefly within the "About Us" seection. However, its also mentioned within the "Club Ride" section of the site. I've employed the use of Google Map API specifically Maps Javascript API and Directions API to render the groups main club rides onto a map. One ride takes place every Saturday and the second ride takes places mid week at lunch time. Not only do the routes render on the map once the respecitive buttons are clicked, but key information appears within a new div. This information includes total distance of the routes, which give the vistior an indication on the fitness level required in order to complete the routes.  
+
+* ###  We need a platform that not only informs potential new memebers of why they should join the club, but give them the oppertunity to express interest in joining. 
+
+The whole site acts as a advert for why someone should join the cycling club. The "About Us" section informs the visitor about the clubs history and what they offer there current memebers. The "Club Ride" section advertises the clubs two routes using an interactive Javascript element to render the route on a map. This reinforces the key selling points highlighted in the "About Us" section, that of a collobrative and team spirit. Once the "About Us" and "Club Ride" section have sold the club experience to the vistor, then the form within the "Join the Crew" section. Once the form is submitted it will be emailed to the club admins Googlemail address using EmailJS. The admin team are then able to progress that enquiry in the hope of adding a new member to the club. 
