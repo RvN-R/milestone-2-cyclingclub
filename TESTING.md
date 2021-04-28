@@ -14,6 +14,8 @@ I used Chromes inspect feature Lighthouse on my page, to improce the sites perfo
 
 * <b>SEO</b> - Scored 90 for Desktop and 92 for Mobile - Again another high scoring section of the Lighthouse test, and only received limited suggestions none of which were applicable to the improved running of the site. 
 
+<hr>
+
 ## Testing client Requirements featured in README
 
 * ###  We need a platform that illustrates and shares our key values.
@@ -35,6 +37,8 @@ Informaiton on physical requirements is mentioned briefly within the "About Us" 
 * ###  We need a platform that not only informs potential new memebers of why they should join the club, but give them the oppertunity to express interest in joining. 
 
 The whole site acts as a advert for why someone should join the cycling club. The "About Us" section informs the visitor about the clubs history and what they offer there current memebers. The "Club Ride" section advertises the clubs two routes using an interactive Javascript element to render the route on a map. This reinforces the key selling points highlighted in the "About Us" section, that of a collobrative and team spirit. Once the "About Us" and "Club Ride" section have sold the club experience to the vistor, then the form within the "Join the Crew" section. Once the form is submitted it will be emailed to the club admins Googlemail address using EmailJS. The admin team are then able to progress that enquiry in the hope of adding a new member to the club. 
+
+<hr>
 
 ## Testing User Stories from UX section in README
 
@@ -61,9 +65,11 @@ The whole site acts as a advert for why someone should join the cycling club. Th
 
     * Using the Navigation Bar a returning visitor can quickly find the "Join the Crew" section where the sign up form is featured. The Navigation Bar is sticky meaning it always stays at the top of the page, allowing the visitor to easly navigate to the "Join the Crew" section no matter there location. Once there the form is simple to complete and with 4 clicks the visitor can submit interest. 
 
-## Testing client Requirements featured in README
+<hr>
 
-## Navigation
+## Manually Testing Website features
+
+### Navigation
 * Load of Website. 
 * Right click and select inspection.
 * Change the screen size from desktop to tablet, then change from tablet to smaller devices and verify that the navigation bar is responsive. 
@@ -75,13 +81,13 @@ The whole site acts as a advert for why someone should join the cycling club. Th
 * Click each link and make sure you are transported to the correct section of the site. 
 * Repeat verfication of functionality and responsiveness on iPhone and iPad.  
 
-## About Us Section
+### About Us Section
 * Load of Website. 
 * Right click and select inspection.
 * Scoll down the page to About Us Section. 
 * Change screen size from desktop to tablet, then change from tablet to smaller devices and verify hero images and text are appearing as designed. For X Large and Large screen sizes text and one hero Image should appear. Medium screen sizes two hero images should appear along with the text. Finally small screen sizes and below only the text should appear and no hero images. 
 
-## Club Ride Section
+### Club Ride Section
 * Load of Website. 
 * Right click and select inspection.
 * Scoll down the page to Club Ride Section.
@@ -90,23 +96,45 @@ The whole site acts as a advert for why someone should join the cycling club. Th
 * Peform the following manual check <b>CLUB RIDE > CLICK "Saturday Ride" BUTTON</b> the appropriate route should appear on the amp. In additon key informatiom to the route should appear in a new div detailing routes Meeting Point, Ending Point and Duration. 
 * Peform the following manual check <b>CLUB RIDE > CLICK "Lunch Time Ride" BUTTON</b> the appropriate route should appear on the amp. In additon key informatiom to the route should appear in a new div detailing routes Meeting Point, Ending Point and Duration. 
 
-## Join the Crew
+### Join the Crew
 * Load of Website. 
 * Right click and select inspection.
 * Scoll down the page to "Join the Crew" Section.
 * Change the screen size from desktop to tablet, then change from tablet to smaller devices, verify that the forms appearance isn't effected by differing aspect ratios. 
 * Click the call to action button labelled "Send" without filling out any of the form, confirm that warning  requesting to fill in outstanding fields. 
 * Fill in the "Name" field and then click the call to action button labelled "Send", confirm that you get a warning requesting to fill in outstanding fields. 
-* Repeat above process for both "Email" and "Message" to confirm that the empty field warnings are working as designed. 
-* Fill in all of the fields, then click the he call to action button labelled "Send". Providing you are still in inspect mode when you check this you should see "SUCCESS!" confirming the form was submitted successfuly. 
-* When you perform the previous process a modal should also appear informing the visitor what will happen following the submission of there form. 
-* Click the X in the right hand corner of the modal to close it, confirm that the form as reset. 
-* Log into the Ram Cycling Admin Teams Googlemail address, an unread email should be in the inbox, with the information you previously submitted. 
+* Repeat above process for both "Email" and "Message" fields to confirm that the empty field warnings are working as designed. 
+* Fill in all of the fields as displayed in the image below, then click the the call to action button labelled "Send". Providing you are still in inspect mode when you check this you should see "SUCCESS!" confirming the form was submitted successfuly. 
 
+<p align ="center"><img src="testing-assets/testing-images/submitting-form.png"></p>
 
+* When you perform the previous process a modal should also appear informing the visitor what will happen following the submission of there form. I've included an image below of what this should look like: 
 
-## Footer
+<p align ="center"><img src="testing-assets/testing-images/successful-modal-confirmation.png"></p>
+
+* Click the X in the top right hand corner of the modal to close it, confirm that the form as reset. 
+* Log into the Ram Cycling Admin Teams Googlemail address, an unread email should be in the inbox, with the information you previously submitted in the form. I've included an image below of what this should look like: 
+
+<p align ="center"><img src="testing-assets/testing-images/email-confirmation.png"></p>
+
+### Footer
 * Hover over each social media icon and confirm color of hover select function is working as designed. Color should be Vivid Sky Blue and turn Rufous once mouse hovers over the icon. 
 * Perform the following manual check: <b>HOME > SCROLL to FOOTER > CLICK ICON</b>. When you click the icon a new tab whould open with the clubs relevant social media account. 
 * Reduce screen size to verify that the icon's size is responsive, and they remain centered. 
 * Also confirm the footer itself is responsive by decreasing and increasing screen sizes. 
+
+<hr>
+
+## Further Testing
+
+* Viewed this webiste on various devices including iPhone 11, iPad Pro, Microsoft Surface, iMac Pro and Dell Latitude 5410, with no reports of issues found. 
+
+* Completed the manual testing steps mentioned above on various browsers, including Safari and Firefox with no issues flagged. 
+
+* Sent link of website to family and friends for them to check over the site. It was also reported that the images within the header took a whole to load. 
+
+## Known Bugs
+
+* Load up time of of the sites header could be shorter. More time is needed experimenting with different codecs and files sizes, that don't compromise the aesthetics of the site. 
+
+
