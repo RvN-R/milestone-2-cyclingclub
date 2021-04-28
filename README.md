@@ -99,8 +99,7 @@ Join the Crew section adopts the simple approach used in the previous section. T
 * <i>Club Store</i> - As the cycling group grows they may want add a store section to the page, offering cycling jerseys, cycling caps and other merchandise. 
 * <i>Processing Payments</i> - When the store is implemented then a payment processing API is going to have to be adopted in order to process payments on the site. Additional backend is going to have to be implemented. 
 * <i>Incorporating Longitude and Latitude</i> - At present I've used strings in order to communicate the cycling routes origin, destination and waypoints with Googles DirectionsRenderer and DirectionsService objects, using a polyfill script at the top of the index.html page. Fortunately Google has an extensive libary of locations across London premapped, and accepts strings in order to render these locations on the map. However,  in the future I need to experiment with incorporating longitude and latitude instead of strings. This will allow the routes to be more accurate, and less relient on Googles location libary. 
-
-<b>ADD MORE ON ADDING MORE RIDES WITHOUT REWRITTING THE LOGIC</b>
+* <i> New Cycling Routes, Adding Logic without Re-writting Function</i> - The main Javascript function showRoute that I have used to render the cycling routes onto a Map works well. However, should the club want to add more routes they would have a challenge in doing so without the help of someone who understood Javascript. This is because I wrapped up the logic within the function. Googles directionsRenderer and directionsService objects require a routes origin, destination and waypoint in order to render a route on a map. To try and make the process eaiser I created a variable called ROUTES, that contained an array with list of values called routeName and routeDetails. Once called the showRoute function would look for these values in the array, then feed origin, destination and waypoint the information inside routeDetails. This informaiton would go back to Googles directionsRenderer and directionsService and render the route on the map. Although this has simplified the process of adding additonal routes , you would still need some experience in coding to add a new call to action button for said new route. In future a different approach similar to the ROUTES varible needs to be taken for call to action buttons. Instead of having to create a physical call to action button, that process would be automatically taken care of when a new route is added to the ROUTES variable. More experience in Javascript is needed before I am able to exicute this future feature. 
 
 ## Technologies Used
 
@@ -122,7 +121,7 @@ Join the Crew section adopts the simple approach used in the previous section. T
 
 ## Testing
 
-Testing information can be found on a separate <a href="#">Testing Readme</a>. 
+Testing information can be found on a separate <a href="TESTING.md>Testing Readme</a>. 
 
 ## Deployment
 
