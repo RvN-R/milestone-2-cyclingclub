@@ -4,10 +4,6 @@
 
 <a  href= "https://rvn-r.github.io/milestone-2-cyclingclub/"  >View the live project here..</a>
 
-<p  align ="center"><img  src="readme-assets/readme-images/ram-cycling-club-responsive.png"></p>
-
-  
-
 This is the main page for a small cycle team based in Wandsworth, South West London. It is designed to be responsive and accessible on a range of devices and have interactive elements to help meet the client's key goals. The website features an "About Us" section, "Club Ride" section and finally a "Sign Up" section which includes a form to allow visitors to express interest in joining the club.
 
   
@@ -16,7 +12,7 @@ The primary goal of the website is to provide visitors with information regardin
 
   
 
-<b>include image of website on various devices</b>
+<p  align ="center"><img  src="readme-assets/readme-images/ram-cycling-club-responsive.png"></p>
 
   
 
